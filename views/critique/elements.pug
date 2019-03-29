@@ -1,0 +1,487 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='description' content='')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags
+  // Title
+  title Delicious - Food Blog Template | Elements
+  // Favicon
+  link(rel='icon' href='img/core-img/favicon.ico')
+  // Core Stylesheet
+  link(rel='stylesheet' href='style.css')
+// Preloader
+#preloader
+  i.circle-preloader
+  img(src='img/core-img/salad.png' alt='')
+// Search Wrapper
+.search-wrapper
+  // Close Btn
+  .close-btn
+    i.fa.fa-times(aria-hidden='true')
+  .container
+    .row
+      .col-12
+        form(action='#' method='post')
+          input(type='search' name='search' placeholder='Type any keywords...')
+          button(type='submit')
+            i.fa.fa-search(aria-hidden='true')
+// ##### Header Area Start #####
+header.header-area
+  // Top Header Area
+  .top-header-area
+    .container.h-100
+      .row.h-100.align-items-center.justify-content-between
+        // Breaking News
+        .col-12.col-sm-6
+          .breaking-news
+            #breakingNewsTicker.ticker
+              ul
+                li
+                  a(href='#') Hello World!
+                li
+                  a(href='#') Welcome to Colorlib Family.
+                li
+                  a(href='#') Hello Delicious!
+        // Top Social Info
+        .col-12.col-sm-6
+          .top-social-info.text-right
+            a(href='#')
+              i.fa.fa-pinterest(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-facebook(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-twitter(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-dribbble(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-behance(aria-hidden='true')
+            a(href='#')
+              i.fa.fa-linkedin(aria-hidden='true')
+  // Navbar Area
+  .delicious-main-menu
+    .classy-nav-container.breakpoint-off
+      .container
+        // Menu
+        nav#deliciousNav.classy-navbar.justify-content-between
+          // Logo
+          a.nav-brand(href='index.html')
+            img(src='img/core-img/logo.png' alt='')
+          // Navbar Toggler
+          .classy-navbar-toggler
+            span.navbarToggler
+              span
+              span
+              span
+          // Menu
+          .classy-menu
+            // close btn
+            .classycloseIcon
+              .cross-wrap
+                span.top
+                span.bottom
+            // Nav Start
+            .classynav
+              ul
+                li.active
+                  a(href='index.html') Home
+                li
+                  a(href='#') Pages
+                  ul.dropdown
+                    li
+                      a(href='index.html') Home
+                    li
+                      a(href='about.html') About Us
+                    li
+                      a(href='blog-post.html') Blog Post
+                    li
+                      a(href='receipe-post.html') Receipe Post
+                    li
+                      a(href='contact.html') Contact
+                    li
+                      a(href='elements.html') Elements
+                    li
+                      a(href='#') Dropdown
+                      ul.dropdown
+                        li
+                          a(href='index.html') Home
+                        li
+                          a(href='about.html') About Us
+                        li
+                          a(href='blog-post.html') Blog Post
+                        li
+                          a(href='receipe-post.html') Receipe Post
+                        li
+                          a(href='contact.html') Contact
+                        li
+                          a(href='elements.html') Elements
+                        li
+                          a(href='#') Dropdown
+                          ul.dropdown
+                            li
+                              a(href='index.html') Home
+                            li
+                              a(href='about.html') About Us
+                            li
+                              a(href='blog-post.html') Blog Post
+                            li
+                              a(href='receipe-post.html') Receipe Post
+                            li
+                              a(href='contact.html') Contact
+                            li
+                              a(href='elements.html') Elements
+                li
+                  a(href='#') Mega Menu
+                  .megamenu
+                    ul.single-mega.cn-col-4
+                      li.title Catagory
+                      li
+                        a(href='index.html') Home
+                      li
+                        a(href='about.html') About Us
+                      li
+                        a(href='blog-post.html') Blog Post
+                      li
+                        a(href='receipe-post.html') Receipe Post
+                      li
+                        a(href='contact.html') Contact
+                      li
+                        a(href='elements.html') Elements
+                    ul.single-mega.cn-col-4
+                      li.title Catagory
+                      li
+                        a(href='index.html') Home
+                      li
+                        a(href='about.html') About Us
+                      li
+                        a(href='blog-post.html') Blog Post
+                      li
+                        a(href='receipe-post.html') Receipe Post
+                      li
+                        a(href='contact.html') Contact
+                      li
+                        a(href='elements.html') Elements
+                    ul.single-mega.cn-col-4
+                      li.title Catagory
+                      li
+                        a(href='index.html') Home
+                      li
+                        a(href='about.html') About Us
+                      li
+                        a(href='blog-post.html') Blog Post
+                      li
+                        a(href='receipe-post.html') Receipe Post
+                      li
+                        a(href='contact.html') Contact
+                      li
+                        a(href='elements.html') Elements
+                    .single-mega.cn-col-4
+                      .receipe-slider.owl-carousel
+                        a(href='#')
+                          img(src='img/bg-img/bg1.jpg' alt='')
+                        a(href='#')
+                          img(src='img/bg-img/bg6.jpg' alt='')
+                li
+                  a(href='receipe-post.html') Receipies
+                li
+                  a(href='receipe-post.html') 4 Vegans
+                li
+                  a(href='contact.html') Contact
+              // Newsletter Form
+              .search-btn
+                i.fa.fa-search(aria-hidden='true')
+            // Nav End
+// ##### Header Area End #####
+// ##### Breadcumb Area Start #####
+.breadcumb-area.bg-img.bg-overlay(style='background-image: url(img/bg-img/breadcumb5.jpg);')
+  .container.h-100
+    .row.h-100.align-items-center
+      .col-12
+        .breadcumb-text.text-center
+          h2 Elements
+// ##### Breadcumb Area End #####
+// ##### Elements Area Start #####
+section.elements-area.section-padding-80-0
+  .container
+    .row
+      // ********** Buttons **********
+      .col-12
+        .elements-title
+          h2 Buttons
+        // Buttons
+        .delicious-buttons-area.mb-80
+          a.btn.delicious-btn.m-1(href='#') See Receipe
+          a.btn.delicious-btn.btn-2.m-1(href='#') See Receipe
+          a.btn.delicious-btn.btn-3.m-1(href='#') See Receipe
+          a.btn.delicious-btn.btn-4.m-1(href='#') See Receipe
+      // ********** Progress Bars & Accordions **********
+      .col-12
+        .elements-title.mb-80
+          h2 Accordians &amp; Tabs
+      // ##### Accordians #####
+      .col-12.col-lg-6
+        #accordion.accordions.mb-80(role='tablist' aria-multiselectable='true')
+          // Single Accordian Area
+          .panel.single-accordion
+            h6
+              a(role='button' aria-expanded='true' aria-controls='collapseOne' data-toggle='collapse' data-parent='#accordion' href='#collapseOne')
+                | Aenean hendrerit varius massa quis laoreet.
+                span.accor-open
+                  i.fa.fa-plus(aria-hidden='true')
+                span.accor-close
+                  i.fa.fa-minus(aria-hidden='true')
+            #collapseOne.accordion-content.collapse.show
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis semper finibus ac eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate id justo quis facilisis.
+          // Single Accordian Area
+          .panel.single-accordion
+            h6
+              a.collapsed(role='button' aria-expanded='true' aria-controls='collapseTwo' data-parent='#accordion' data-toggle='collapse' href='#collapseTwo')
+                | Hendrerit varius massa quis laoreet.
+                span.accor-open
+                  i.fa.fa-plus(aria-hidden='true')
+                span.accor-close
+                  i.fa.fa-minus(aria-hidden='true')
+            #collapseTwo.accordion-content.collapse
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis semper finibus ac eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate id justo quis facilisis.
+          // Single Accordian Area
+          .panel.single-accordion
+            h6
+              a.collapsed(role='button' aria-expanded='true' aria-controls='collapseThree' data-parent='#accordion' data-toggle='collapse' href='#collapseThree')
+                | Aenean hendrerit varius massa quis laoreet.
+                span.accor-open
+                  i.fa.fa-plus(aria-hidden='true')
+                span.accor-close
+                  i.fa.fa-minus(aria-hidden='true')
+            #collapseThree.accordion-content.collapse
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eu felis semper finibus ac eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate id justo quis facilisis.
+      // ##### Tabs #####
+      .col-12.col-lg-6
+        .delicious-tabs-content
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item
+              a#tab--1.nav-link(data-toggle='tab' href='#tab1' role='tab' aria-controls='tab1' aria-selected='false') Varius massa
+            li.nav-item
+              a#tab--2.nav-link.active(data-toggle='tab' href='#tab2' role='tab' aria-controls='tab2' aria-selected='false') Hendrerit varius
+            li.nav-item
+              a#tab--3.nav-link(data-toggle='tab' href='#tab3' role='tab' aria-controls='tab3' aria-selected='true') Aenean hendrerit
+          #myTabContent.tab-content.mb-80
+            #tab1.tab-pane.fade(role='tabpanel' aria-labelledby='tab--1')
+              .delicious-tab-content
+                // Tab Text
+                .delicious-tab-text
+                  p
+                    | Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.
+            #tab2.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='tab--2')
+              .delicious-tab-content
+                // Tab Text
+                .delicious-tab-text
+                  p
+                    | Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.
+            #tab3.tab-pane.fade(role='tabpanel' aria-labelledby='tab--3')
+              .delicious-tab-content
+                // Tab Text
+                .delicious-tab-text
+                  p
+                    | Integer nec bibendum lacus. Praesent malesuada congue, Suspendisse dictum enim sit amet libero malesu ada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Curabitur rhoncus auctor eleifend. Praesent malesuada congue.
+      // ********** Milestones **********
+      .col-12
+        .elements-title.mb-80
+          h2 Milestone
+      .col-12
+        .delicious-cool-facts-area
+          .row
+            // Single Cool Fact
+            .col-12.col-sm-6.col-lg-3
+              .single-cool-fact
+                img(src='img/core-img/salad.png' alt='')
+                h3
+                  span.counter 1287
+                h6 Amazing receipies
+            // Single Cool Fact
+            .col-12.col-sm-6.col-lg-3
+              .single-cool-fact
+                img(src='img/core-img/hamburger.png' alt='')
+                h3
+                  span.counter 25
+                h6 Burger receipies
+            // Single Cool Fact
+            .col-12.col-sm-6.col-lg-3
+              .single-cool-fact
+                img(src='img/core-img/rib.png' alt='')
+                h3
+                  span.counter 471
+                h6 Meat receipies
+            // Single Cool Fact
+            .col-12.col-sm-6.col-lg-3
+              .single-cool-fact
+                img(src='img/core-img/pancake.png' alt='')
+                h3
+                  span.counter 326
+                h6 Desert receipies
+      // ********** Loaders **********
+      .col-12
+        .elements-title.mb-80
+          h2 Loaders
+      .col-12
+        // Loaders Area Start
+        .our-skills-area.text-center
+          .row
+            // Single Bar Circle
+            .col-12.col-sm-6.col-md-3
+              .single-pie-bar.mb-80(data-percent='95')
+                canvas.bar-circle(width='70' height='70')
+                h6 Recipies
+            // Single Bar Circle
+            .col-12.col-sm-6.col-md-3
+              .single-pie-bar.mb-80(data-percent='100')
+                canvas.bar-circle(width='70' height='70')
+                h6 Pure Love
+            // Single Bar Circle
+            .col-12.col-sm-6.col-md-3
+              .single-pie-bar.mb-80(data-percent='85')
+                canvas.bar-circle(width='70' height='70')
+                h6 Creativity
+            // Single Bar Circle
+            .col-12.col-sm-6.col-md-3
+              .single-pie-bar.mb-80(data-percent='52')
+                canvas.bar-circle(width='70' height='70')
+                h6 Passion
+      // ********** Icon Boxes **********
+      .col-12
+        .elements-title.mb-80
+          h2 Icon Boxes
+      .col-12
+        .row
+          // Single Course Area
+          .col-12.col-sm-6.col-lg-4
+            .single-feature-area.mb-80
+              .d-flex.align-items-center.mb-30
+                img(src='img/core-img/hamburger2.png' alt='')
+                h5 Amazing Recipies
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor.
+          // Single Course Area
+          .col-12.col-sm-6.col-lg-4
+            .single-feature-area.mb-80
+              .d-flex.align-items-center.mb-30
+                img(src='img/core-img/pizza.png' alt='')
+                h5 Italian Food
+              p
+                | Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibu.
+          // Single Course Area
+          .col-12.col-sm-6.col-lg-4
+            .single-feature-area.mb-80
+              .d-flex.align-items-center.mb-30
+                img(src='img/core-img/cake2.png' alt='')
+                h5 Sweets &amp; Cakes
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor.
+// ***** Elements Area End *****
+// ##### Follow Us Instagram Area Start #####
+.follow-us-instagram
+  .container
+    .row
+      .col-12
+        h5 Follow Us Instragram
+  // Instagram Feeds
+  .insta-feeds.d-flex.flex-wrap
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='img/bg-img/insta1.jpg' alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='img/bg-img/insta2.jpg' alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='img/bg-img/insta3.jpg' alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='img/bg-img/insta4.jpg' alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='img/bg-img/insta5.jpg' alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='img/bg-img/insta6.jpg' alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+    // Single Insta Feeds
+    .single-insta-feeds
+      img(src='img/bg-img/insta7.jpg' alt='')
+      // Icon
+      .insta-icon
+        a(href='#')
+          i.fa.fa-instagram(aria-hidden='true')
+// ##### Follow Us Instagram Area End #####
+// ##### Footer Area Start #####
+footer.footer-area
+  .container.h-100
+    .row.h-100
+      .col-12.h-100.d-flex.flex-wrap.align-items-center.justify-content-between
+        // Footer Social Info
+        .footer-social-info.text-right
+          a(href='#')
+            i.fa.fa-pinterest(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-facebook(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-twitter(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-dribbble(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-behance(aria-hidden='true')
+          a(href='#')
+            i.fa.fa-linkedin(aria-hidden='true')
+        // Footer Logo
+        .footer-logo
+          a(href='index.html')
+            img(src='img/core-img/logo.png' alt='')
+        // Copywrite
+        p
+          // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+          | Copyright &copy;
+          script.
+            document.write(new Date().getFullYear());
+          |  All rights reserved | This template is made with 
+          i.fa.fa-heart-o(aria-hidden='true')
+          |  by 
+          a(href='https://colorlib.com' target='_blank') Colorlib
+          // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+// ##### Footer Area Start #####
+// ##### All Javascript Files #####
+// jQuery-2.2.4 js
+script(src='js/jquery/jquery-2.2.4.min.js')
+// Popper js
+script(src='js/bootstrap/popper.min.js')
+// Bootstrap js
+script(src='js/bootstrap/bootstrap.min.js')
+// All Plugins js
+script(src='js/plugins/plugins.js')
+// Active js
+script(src='js/active.js')
