@@ -11,6 +11,9 @@ head
   link(rel='icon' href='images/critique/img/core-img/favicon.ico')
   // Core Stylesheet
   link(rel='stylesheet' href='css/critique/css/style.css')
+  // Font awesome loading
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+
 // Preloader
 #preloader
   i.circle-preloader
@@ -39,11 +42,9 @@ header.header-area
             #breakingNewsTicker.ticker
               ul
                 li
-                  a(href='#') Hello World!
+                  a(href='#') Hello Tiquers
                 li
-                  a(href='#') Welcome to Colorlib Family.
-                li
-                  a(href='#') Hello Delicious!
+                  a(href='#') Welcome to my blog
         // Top Social Info
         .col-12.col-sm-6
           .top-social-info.text-right
@@ -66,8 +67,8 @@ header.header-area
         // Menu
         nav#deliciousNav.classy-navbar.justify-content-between
           // Logo
-          a.nav-brand(href='index.html')
-            img(src='img/core-img/logo.png' alt='')
+          a.nav-brand(href='/')
+            img(src='images/critique/img/core-img/logo.png' alt='')
           // Navbar Toggler
           .classy-navbar-toggler
             span.navbarToggler
@@ -84,110 +85,73 @@ header.header-area
             // Nav Start
             .classynav
               ul
-                li.active
-                  a(href='index.html') Home
                 li
-                  a(href='#') Pages
-                  ul.dropdown
-                    li
-                      a(href='index.html') Home
-                    li
-                      a(href='about.html') About Us
-                    li
-                      a(href='blog-post.html') Blog Post
-                    li
-                      a(href='receipe-post.html') Receipe Post
-                    li
-                      a(href='contact.html') Contact
-                    li
-                      a(href='elements.html') Elements
-                    li
-                      a(href='#') Dropdown
-                      ul.dropdown
-                        li
-                          a(href='index.html') Home
-                        li
-                          a(href='about.html') About Us
-                        li
-                          a(href='blog-post.html') Blog Post
-                        li
-                          a(href='receipe-post.html') Receipe Post
-                        li
-                          a(href='contact.html') Contact
-                        li
-                          a(href='elements.html') Elements
-                        li
-                          a(href='#') Dropdown
-                          ul.dropdown
-                            li
-                              a(href='index.html') Home
-                            li
-                              a(href='about.html') About Us
-                            li
-                              a(href='blog-post.html') Blog Post
-                            li
-                              a(href='receipe-post.html') Receipe Post
-                            li
-                              a(href='contact.html') Contact
-                            li
-                              a(href='elements.html') Elements
+                    a(href='/') Home
                 li
-                  a(href='#') Mega Menu
-                  .megamenu
-                    ul.single-mega.cn-col-4
-                      li.title Catagory
-                      li
-                        a(href='index.html') Home
-                      li
-                        a(href='about.html') About Us
-                      li
-                        a(href='blog-post.html') Blog Post
-                      li
-                        a(href='receipe-post.html') Receipe Post
-                      li
-                        a(href='contact.html') Contact
-                      li
-                        a(href='elements.html') Elements
-                    ul.single-mega.cn-col-4
-                      li.title Catagory
-                      li
-                        a(href='index.html') Home
-                      li
-                        a(href='about.html') About Us
-                      li
-                        a(href='blog-post.html') Blog Post
-                      li
-                        a(href='receipe-post.html') Receipe Post
-                      li
-                        a(href='contact.html') Contact
-                      li
-                        a(href='elements.html') Elements
-                    ul.single-mega.cn-col-4
-                      li.title Catagory
-                      li
-                        a(href='index.html') Home
-                      li
-                        a(href='about.html') About Us
-                      li
-                        a(href='blog-post.html') Blog Post
-                      li
-                        a(href='receipe-post.html') Receipe Post
-                      li
-                        a(href='contact.html') Contact
-                      li
-                        a(href='elements.html') Elements
-                    .single-mega.cn-col-4
-                      .receipe-slider.owl-carousel
-                        a(href='#')
-                          img(src='img/bg-img/bg1.jpg' alt='')
-                        a(href='#')
-                          img(src='img/bg-img/bg6.jpg' alt='')
+                    a(href='/about') About
                 li
-                  a(href='receipe-post.html') Receipies
+                    a(href='/hair_blog') Hair Blog
                 li
-                  a(href='receipe-post.html') 4 Vegans
+                    a(href='/food_blog') Food Blog
                 li
-                  a(href='contact.html') Contact
+                    a(href='/contact') Contact
+                //- li
+                //-   a(href='#') Mega Menu
+                //-   .megamenu
+                //-     ul.single-mega.cn-col-4
+                //-       li.title Catagory
+                //-       li
+                //-         a(href='index.html') Home
+                //-       li
+                //-         a(href='about.html') About Us
+                //-       li
+                //-         a(href='blog-post.html') Blog Post
+                //-       li
+                //-         a(href='receipe-post.html') Receipe Post
+                //-       li
+                //-         a(href='contact.html') Contact
+                //-       li
+                //-         a(href='elements.html') Elements
+                //-     ul.single-mega.cn-col-4
+                //-       li.title Catagory
+                //-       li
+                //-         a(href='index.html') Home
+                //-       li
+                //-         a(href='about.html') About Us
+                //-       li
+                //-         a(href='blog-post.html') Blog Post
+                //-       li
+                //-         a(href='receipe-post.html') Receipe Post
+                //-       li
+                //-         a(href='contact.html') Contact
+                //-       li
+                //-         a(href='elements.html') Elements
+                //-     ul.single-mega.cn-col-4
+                //-       li.title Catagory
+                //-       li
+                //-         a(href='index.html') Home
+                //-       li
+                //-         a(href='about.html') About Us
+                //-       li
+                //-         a(href='blog-post.html') Blog Post
+                //-       li
+                //-         a(href='receipe-post.html') Receipe Post
+                //-       li
+                //-         a(href='contact.html') Contact
+                //-       li
+                //-         a(href='elements.html') Elements
+                //-     .single-mega.cn-col-4
+                //-       .receipe-slider.owl-carousel
+                //-         a(href='#')
+                //-           img(src='img/bg-img/bg1.jpg' alt='')
+                //-         a(href='#')
+                //-           img(src='img/bg-img/bg6.jpg' alt='')
+                //- li
+                //-   a(href='receipe-post.html') Receipies
+                //- li
+                //-   a(href='receipe-post.html') 4 Vegans
+                //- li
+                //-   a(href='contact.html') Contact
               // Newsletter Form
               .search-btn
                 i.fa.fa-search(aria-hidden='true')
@@ -195,12 +159,12 @@ header.header-area
 // ##### Header Area End #####
 // ##### All Javascript Files #####
 // jQuery-2.2.4 js
-script(src='js/jquery/jquery-2.2.4.min.js')
+script(src='js/critique/js/jquery/jquery-2.2.4.min.js')
 // Popper js
-script(src='js/bootstrap/popper.min.js')
+script(src='js/critique/js/bootstrap/popper.min.js')
 // Bootstrap js
-script(src='js/bootstrap/bootstrap.min.js')
+script(src='js/critique/js/bootstrap/bootstrap.min.js')
 // All Plugins js
-script(src='js/plugins/plugins.js')
+script(src='js/critique/js/plugins/plugins.js')
 // Active js
-script(src='js/active.js')
+script(src='js/critique/js/active.js')

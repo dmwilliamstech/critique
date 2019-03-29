@@ -9,28 +9,33 @@ app.use(express.static(__dirname + '/public'));
 
 //Set Home route
 app.get('/', (req, res)=> {
-        //const person = people.profiles.find(p => p.id === req.query.id);
-        res.render('critique', {
-            title: `Critique`,
-//            person,
-         });
-
+    res.render('critique', {
+        title: `Critique`,
     });
+});
+
     app.get('/contact', (req, res)=> {
-        //const person = people.profiles.find(p => p.id === req.query.id);
         res.render('contact', {
             title: `contact`,
-//            person,
-         });
-
+        });
     });
+    
     app.get('/about', (req, res)=> {
-        //const person = people.profiles.find(p => p.id === req.query.id);
         res.render('about', {
             title: `About`,
-//            person,
          });
-
+         
+    });
+    
+    app.get('/food_blog', (req, res)=> {
+        res.render('food_blog', {
+            title: `Food Blog`,
+        });
+    });    
+    app.get('/hair_blog', (req, res)=> {
+        res.render('hair', {
+            title: `Hair Blog`,
+        });     
     });
 
 const server = app.listen(process.env.PORT || 7000, () =>{
